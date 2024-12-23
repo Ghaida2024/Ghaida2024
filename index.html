@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> أكاديمية ملاذ</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+
+    .social-icons i {
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icons i:hover {
+      transform: scale(1.2);
+    }
+
+    /* Styles for the services slider */
+    @keyframes slide {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .services-slider {
+      display: flex;
+      animation: slide 10s linear infinite;
+    }
+
+    .service-item {
+      min-width: 300px; /* Adjust width as needed */
+      margin: 0 10px; /* Space between items */
+      background-color: white;
+      border-radius: 0.5rem; /* Tailwind's rounded-lg */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-md */
+      text-align: center;
+    }
+
+    .service-item img {
+      width: 100%;
+      height: 150px; /* Adjust height as needed */
+      object-fit: cover; /* Maintain aspect ratio */
+      border-radius: 0.5rem 0.5rem 0 0; /* Rounded top corners */
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-700 text-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold">أكاديمية ملاذ  </a>
+      <ul class="flex space-x-4 space-x-reverse">
+        <li><a href="index.html" class="hover:underline"> الرئيسية</a></li>
+        <li><a href="services.html" class="hover:underline">خدماتنا</a></li>
+        <li><a href="work.html" class="hover:underline">أعمالنا السابقة</a></li>
+        <li><a href="contact.html" class="hover:underline">اتصل بنا</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="py-10 bg-white">
+    <div class="container mx-auto text-center">
+      <div class="relative bg-cover bg-center h-[400px]" style="background-image: url('image/kk.webp');">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center">
+          <h1 class="text-4xl font-bold text-white mb-4">مرحبًا بك في أكاديمية ملاذ  </h1>
+          <p class="text-lg text-gray-200">
+            نحن هنا لدعمك في رحلتك الأكاديمية. اكتشف خدماتنا واستفد من خبراتنا لتحقيق أهدافك.
+          </p>
+          <a href="services.html" data-page="services" class="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">
+            اكتشف خدماتنا
+          </a>
+        </div>
+      </div>
+
+      <!-- Video Section -->
+       <div class="py-10 bg-white"></div>
+      <section class="py-10">
+        <h2 class="text-3xl font-bold text-blue-700 mb-4">شاهد الفيديو التعريفي</h2>
+        <div class="flex justify-center">
+          <iframe width="560" height="315" src="VIDEO/vid.mp4" frameborder="0" allow=" accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="py-10">
+        <h2 class="text-3xl font-bold text-blue-700 mb-4"></h2>
+        <h2 class="text-3xl font-bold text-blue-700 mb-4">من نحن؟</h2>
+        <p class="text-gray-700 leading-relaxed">
+          أكاديمية ملاذ تقدم مجموعة من الخدمات الأكاديمية المصممة خصيصًا لمساعدتك في تحقيق التفوق والتميز في دراستك. 
+          سواء كنت بحاجة إلى مساعدة في البحوث، العروض التقديمية، أو إعداد السيرة الذاتية، نحن هنا لخدمتك.
+        </p>
+      </section>
+
+     <!-- Services Highlights Section -->
+<section class="py-10 bg-gray-100">
+  <h2 class="text-3xl font-bold text-blue-700 mb-4">خدماتنا</h2>
+  <div class="overflow-hidden">
+    <div class="services-slider">
+      <!-- Service 1 -->
+      <div class="service-item">
+        <img src="image/1.webp" alt="إعداد البحوث">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">إعداد البحوث العلمية</h3>
+        <p class="text-gray-600 mt-2">كتابة الأبحاث باللغتين العربية والإنجليزية وفق أعلى المعايير.</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="service-item">
+        <img src="image/2.webp" alt="مشاريع التخرج">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">مشاريع التخرج</h3>
+        <p class="text-gray-600 mt-2">تصميم مشاريع مبتكرة لجميع التخصصات.</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="service-item">
+        <img src="image/3.webp" alt="حل الواجبات">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">حل الواجبات والتكاليف</h3>
+        <p class="text-gray-600 mt-2">توفير حلول دقيقة ومفصلة للواجبات الأكاديمية.</p>
+      </div>
+      <!-- Service 4 -->
+      <div class="service-item">
+        <img src="image/4.webp" alt="إعداد العروض التقديمية">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">إعداد العروض التقديمية</h3>
+        <p class="text-gray-600 mt-2">تصميم عروض بوربوينت احترافية وجذابة.</p>
+      </div>
+      <!-- Service 5 -->
+      <div class="service-item">
+        <img src="image/5.webp" alt="التقارير والأسايمنت">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">التقارير والأسايمنت</h3>
+        <p class="text-gray-600 mt-2">إعداد تقارير شاملة وفق معايير الكتابة الأكاديمية.</p>
+      </div>
+      <!-- Service 6 -->
+      <div class="service-item">
+        <img src="image/6.webp" alt="تلخيص وترجمة النصوص">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">تلخيص وترجمة النصوص</h3>
+        <p class="text-gray-600 mt-2">تلخيص وترجمة الكتب والمحاضرات بدقة واحترافية.</p>
+      </div>
+      <!-- Service 7 -->
+      <div class="service-item">
+        <img src="image/7.webp" alt="إعداد رسائل الماجستير والدكتوراه">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">إعداد رسائل الماجستير والدكتوراه</h3>
+        <p class="text-gray-600 mt-2">تقديم الدعم الكامل في إعداد الرسائل الأكاديمية.</p>
+      </div>
+      <!-- Service 8 -->
+      <div class="service-item">
+        <img src="image/8.webp" alt="تحليل البيانات الإحصائية">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">تحليل البيانات الإحصائية</h3>
+        <p class="text-gray-600 mt-2">باستخدام أدوات مثل SPSS لتقديم نتائج دقيقة.</p>
+      </div>
+      <!-- Service 9 -->
+      <div class="service-item">
+        <img src="image/9.webp" alt="تطوير التطبيقات وصفحات الويب">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">تطوير التطبيقات وصفحات الويب</h3>
+        <p class="text-gray-600 mt-2">بناء تطبيقات وصفحات ويب عصرية باستخدام أحدث التقنيات.</p>
+      </div>
+      <!-- Service 10 -->
+      <div class="service-item">
+        <img src="image/10.webp" alt="تصميم الجرافيك">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">تصميم الجرافيك</h3>
+        <p class="text-gray-600 mt-2">تصميم بوسترات وإنفوجرافيك بأعلى مستوى.</p>
+      </div>
+      <!-- Service 11 -->
+      <div class="service-item">
+        <img src="image/11.webp" alt="تصاميم هندسية">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">تصاميم هندسية</h3>
+        <p class="text-gray-600 mt-2">إعداد تصاميم هندسية باستخدام AutoCAD بتقنيات 2D و3D.</p>
+      </div>
+      <!-- Service 12 -->
+      <div class="service-item">
+        <img src="image/12.webp" alt="حل الاختبارات">
+        <h3 class="text-xl font-bold text-blue-700 mt-2">حل الاختبارات</h3>
+        <p class="text-gray-600 mt-2">تقديم حلول متميزة لاختبارات الكويز، الميد، والفاينل.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-slider {
+    display: flex;
+    animation: slide 30s linear infinite;
+  }
+  .service-item {
+    min-width: 300px;
+    margin: 0 10px;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .service-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+</style>
+
+      <!-- Contact Section -->
+       <section class="bg-gray-100 py-12"></section>
+      <form class="bg-white p-6 rounded-lg shadow-md">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700">الاسم:</label>
+          <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="أدخل اسمك">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">البريد الإلكتروني:</label>
+          <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" placeholder="أدخل بريدك الإلكتروني">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700">رسالتك:</label>
+          <textarea id="message" name="message" required class="mt-1 block w-full border border-gray-300 rounded-md p-2" rows="4" placeholder="اكتب رسالتك هنا"></textarea>
+        </div>
+        <button type="submit" class="px-6 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition duration-300">
+          إرسال
+        </button>
+      </form>
+
+      <!-- Social Media Section -->
+       <section class="bg-gray-100 py-12"></section>
+      <section class="py-6 bg-gray-800">
+        <div class="container mx-auto text-center">
+          <h2 class="text-lg font-bold text-white mb-4">تابعنا على وسائل التواصل الاجتماعي</h2>
+          <div class="flex justify-center space-x-6 space-x-reverse social-icons">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/message/E3KF6UOIJHWAM1" target="_blank" rel="noopener" class="text-green-500 text-3xl hover:text-green-600">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <!-- Telegram -->
+            <a href="https://t.me/Malath_ala" target="_blank" rel="noopener" class="text-blue-500 text-3xl hover:text-blue-600">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://x.com/MalathAbdullah1?t=MyCnHuKN2gPQe_eC2Y-vKg&s=09" target="_blank" rel="noopener" class="text-blue-400 text-3xl hover:text-blue-500">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/malath_abdullah1/profilecard/?igsh=MWZ5Z2I3ZXNhZHN1dQ==" target="_blank" rel="noopener" class="text-pink-500 text-3xl hover:text-pink-600">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <!-- snapchat -->
+            <a href="https://www.snapchat.com/add/malathstac?share_id=Id8AP0NghCA&locale=en-US" target="_blank" rel="noopener" class="text-pink-500 text-3xl hover:text-pink-600">
+              <i class="fab fa-snapchat"></i>
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61551452124463&mibextid=ZbWKwL" target="_blank" rel="noopener" class="text-blue-700 text-3xl hover:text-blue-800">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

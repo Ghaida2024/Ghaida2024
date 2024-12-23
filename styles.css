@@ -1,0 +1,123 @@
+/* إعدادات عامة */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+    background-color: #f7fafc; /* لون خلفية فاتح */
+    color: #2d3748; /* لون النص */
+}
+
+/* تنسيق الروابط */
+a {
+    text-decoration: none;
+    color: #2b6cb0; /* لون الروابط */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2c5282; /* لون الروابط عند التمرير */
+}
+
+/* تنسيق شريط التنقل */
+nav {
+    background-color: #2b6cb0; /* لون خلفية شريط التنقل */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white; /* لون النص في شريط التنقل */
+}
+
+nav a:hover {
+    text-decoration: underline; /* تأثير التمرير على الروابط */
+}
+
+/* تنسيق الأزرار */
+button {
+    background-color: #2b6cb0; /* لون خلفية الأزرار */
+    color: white; /* لون النص */
+    border: none;
+    border-radius: 0.375rem; /* زوايا دائرية */
+    padding: 0.5rem 1rem; /* حشوة */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2c5282; /* لون الخلفية عند التمرير */
+}
+
+/* تنسيق الأقسام */
+.container {
+    max-width: 1200px; /* عرض أقصى */
+    margin: 0 auto; /* توسيط */
+    padding: 1rem; /* حشوة */
+}
+
+/* تنسيق البطاقات */
+.bg-white {
+    background-color: white; /* لون خلفية البطاقة */
+    border-radius: 0.375rem; /* زوايا دائرية */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ظل */
+}
+
+/* تنسيق الصور */
+img {
+    max-width: 100%; /* عرض أقصى */
+    height: auto; /* ارتفاع تلقائي */
+}
+
+/* تنسيق النموذج */
+form {
+    background-color: white; /* لون خلفية النموذج */
+    border-radius: 0.375rem; /* زوايا دائرية */
+    padding: 1.5rem; /* حشوة */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* ظل */
+}
+
+/* تنسيق الحقول */
+input, textarea {
+    width: 100%; /* عرض كامل */
+    padding: 0.5rem; /* حشوة */
+    border: 1px solid #cbd5e0; /* لون الحدود */
+    border-radius: 0.375rem; /* زوايا دائرية */
+    margin-top: 0.5rem; /* مسافة فوق الحقل */
+}
+
+/* تنسيق الرسائل */
+.alert {
+    padding: 1rem; /* حشوة */
+    border-radius: 0.375rem; /* زوايا دائرية */
+    margin-top: 1rem; /* مسافة فوق الرسالة */
+}
+
+/* تنسيق الرسائل الناجحة */
+.alert-success {
+    background-color: #c6f6d5; /* لون خلفية الرسالة الناجحة */
+    color: #2f855a; /* لون النص */
+}
+
+/* تنسيق الرسائل الخطأ */
+.alert-error {
+    background-color: #fed7e2; /* لون خلفية الرسالة الخطأ */
+    color: #c53030; /* لون النص */
+}
+
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-slide {
+    animation: slide 10s linear infinite;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+
